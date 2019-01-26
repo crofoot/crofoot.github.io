@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     function d(){
         var l = ['t', 'o', 'o', 'f', 'o', 'r', 'c'];
         var f = ['c', 'i', 'n', 'i', 'm', 'o', 'd'];
@@ -12,13 +11,16 @@ $(document).ready(function() {
         return n();    
       }
 
+  $('.hover_pulse').hover(
+      function() {
+          $(this).addClass('animated').addClass('pulse');
+      }, function () {
+          $(this).removeClass('animated').removeClass('pulse');
+      }
+  )
 
-      $('#contact')
-      .popup({
-        on: 'click',
-        content : d(),
-        position : 'bottom center'
-      });
+  $('.open_mail').on('click', function(){
+      $('.mail').text('Contact me at ' + d()).addClass('animated').addClass('fadeInUp')
+  })
 
-    
-})
+});

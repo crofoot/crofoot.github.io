@@ -1,135 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dominic's Resume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
-    <script src="dom-cro.js"></script>
-</head>
-<body>
-    <br>
-    <br>
-    <div id='head_container' class="ui text container">
-        <h2 class="ui horizontal divider header">
-            Dominic Crofoot
-        </h2>
-        <div style="text-align: center;">
-            <a href="https://github.com/crofoot"><i class="large github icon"></i></a>
-            <a href="https://www.linkedin.com/in/dominic-crofoot-200756112/"><i class="large linkedin icon"></i></a>
-            <a id='contact' href="javascript:;" class='ui icon'><i class="large address book icon"></i></a>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dominic Crofoot | Developer</title>
+    <link rel="stylesheet" href="styles/bulma.css" />
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar is-fixed-top is-info fixed_top primary"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#about-me"> About </a>
+          <a class="navbar-item" href="#experience"> Experience </a>
+          <a class="navbar-item" href="#projects"> Projects </a>
         </div>
-    </div>
-    <div class="ui secondary vertical pointing menu">
-        <a href="index.html" class="active item">Home</a>
-        <a href="projects.html" class="item"> Projects</a>
-        <a href="about.html" class="item">  About</a>
-    </div>
-    <div class="ui text container">
-            <div class="ui segment">
-                <h3>Education</h3>
-                <div class="ui divider"></div>
-                <a class="ui blue ribbon label">University of Maryland Baltimore County (UMBC)</a>
-                <div>
-                    Bachelor Degree in Computer Science | August 2017-May 2019
-                </div>
-                <div class="ui divider"></div>
-                <a class="ui blue ribbon label">Anne Arundel Community College (AACC)</a>
-                <div>
-                    Information Assurance, Cyber Security, Concentration in Security
-                </div>
+      </div>
+
+    </nav>
+    <section class="hero is-large is-fullheight primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title animated bounceInRight primary_text">
+            Hello, my name is Dominic Crofoot.
+          </h1>
+          <h2 class="subtitle animated bounceInLeft primary_text">
+            I am a software developer based in Annapolis, Maryland.
+          </h2>
+          <div>
+            <a href="https://github.com/crofoot" target="_blank"
+              ><i class="fab fa-github fa-5x my_icon animated fadeInLeft"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/dominic-crofoot-200756112/"
+              target="_blank"
+              ><i class="fab fa-linkedin fa-5x my_icon animated fadeInLeft"></i
+            ></a>
+            <a class="open_mail"><i class="fas fa-at fa-5x my_icon animated fadeInLeft"></i></a>
+            <h2 class="title primary_text mail"></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-medium is-bold section_one" id="about-me">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">About me</h1>
+          <div class="columns">
+            <div class="column is-four-fifths">
+              <h2 class="subtitle">
+                I am a full stack engineer who enjoys developing clean and
+                efficient software. I am currently a senior at the University of
+                Maryland, Baltimore County. I study computer science and am
+                graduating in the spring of 2019.
+              </h2>
+              <h2 class="subtitle">
+                I am currently working at the Anne Arundel County Government,
+                Department of OIT as a mobile and full stack developer intern.
+              </h2>
             </div>
-            <br>
-            <div class="ui segment">
-                <h3>Experience</h3>
-                <div class="ui divider"></div>
-                <a class="ui blue ribbon label">Anne Arundel County Government</a>
-                <div>
-                    Full Stack Web & Mobile Development Intern | September 2016 - present
-                    <ul>
-                        <li>Java Backend Development</li>
-                        <li>Frontend Development - JQuery, HTML, CSS, Bootstrap, Semantic UI, Google Maps API, Charts JS, Moment, FontAwesome</li>
-                        <li>Backend Development - Struts 2, Hibernate, JDBC, SQL Server, Tomcat, Quartz</li>
-                        <li>React Native & Redux Development</li>
-                        <li>Rest API development and Authentication</li>
-                    </ul>
-                </div>
+            <div class="column">
+              <figure class="image is-128x128">
+                <img class="is-rounded" src="./images/12722.jpeg" />
+              </figure>
             </div>
-            <br>
-            <div class="ui segment">
-                <h3>Skills</h3>
-                <div class="ui divider"></div>
-                <a class="ui blue ribbon label">Programming</a>
-                <div>
-                    <ul>
-                        <li>5 years of Java</li>
-                        <li>2 years of Javascript</li>
-                        <li>8 months React Native & Redux Development</li>
-                        <li>Experience with SQL and Database Design and Development</li>
-                        <li>Experienced frontend development including HTML, CSS, Javascript, JQuery, Bootstrap, Ajax, Semantic UI</li>
-                        <li>Github & Bitbucket & Jira</li>
-                    </ul>
-                </div>
-                <div class="ui divider"></div>
-                <a class="ui blue ribbon label">Networking & Security</a>
-                <div>
-                    <ul>
-                        <li>Completed Cisco Networking 1 & 2 class</li>
-                        <li>Ability to stand up a DHCP, DNS, Web Server (Apache, and Tomcat), Windows Servers </li>
-                        <li>Extensive use and understanding of VMware, Virtual box & ability to stand Virtual Machine</li>
-                        <li>Penetration experience include Metasploit, NMAP, Wireshark, SET tool kit</li>
-                        <li>Experience of frontend development including HTML, CSS, Javascript, JQuery, Bootstrap, Ajax, Semantic UI</li>
-                    </ul>
-                </div>
-                <div class="ui divider"></div>
-                <a class="ui blue ribbon label">Technical</a>
-                <div>
-                    <ul>
-                        <li>Git, Github, Bitbucket</li>
-                        <li>Microsoft Office</li>
-                        <li>Google Suite</li>
-                        <li>VMware, Virtualbox</li>
-                        <li>VSCode, Eclipse, Atom</li>
-                        <li>Postman</li>
-                        <li>Photoshop</li>
-                        <li>Linux Bash/CLI</li>
-                        <li>Photoshop</li>
-                        <li>Toad SQL Server, SQL Server, MySQL Server</li>
-                    </ul>
-                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-medium section_two" id="experience">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title primary_text">Work Experience</h1>
+          <div class="columns">
+            <div class="column">
+              <h2 class="primary_text subtitle">
+                Full Stack Web & Mobile Development Intern | September 2016 -
+                present
+              </h2>
+              <ul>
+                <li class="primary_text hover_pulse">
+                  <i class="fas fa-caret-right "></i> java backend development:
+                  JAX-RS, Struts 2, Hibernate
+                </li>
+                <li class="primary_text hover_pulse">
+                  <i class="fas fa-caret-right "></i> frontend development:
+                  React, JQuery, Bootstrap
+                </li>
+                <li class="primary_text hover_pulse">
+                  <i class="fas fa-caret-right "></i> mobile development: React
+                  Native, Redux
+                </li>
+              </ul>
             </div>
-            <br>
-            <div class="ui segment">
-                <h3>Campus Involvement </h3>
-                    <div class="ui divider"></div>
-                    <a class="ui blue ribbon label">Anne Arundel Community College , Cyber Security Club | September 2015- July 2017</a>
-                    <div>
-                        Secretary of Cyber Security Club
-                        <ul>
-                            <li>Studied networking, cryptography, programming and learned overall skills to thrive in the cyber security </li>
-                            <li>Tracked logs for meetings and sent weekly emails to club members</li>
-                        </ul>
-                    </div>
-                    <div class="ui divider"></div>
-                    <a class="ui blue ribbon label">Anne Arundel Community College , Computer Science Club | April 2016- July 2017</a>
-                    <div>
-                        Co-Founder, Vice President
-                        <ul>
-                            <li>Built projects by the use Raspberry Pi processors</li>
-                            <li>Lead club and developed new projects for weekly meetings</li>
-                            <li>Learned programming in multiple languages, and develop applications</li>
-                            <li>Organized programming competition</li>
-                        </ul>
-                    </div>
+            <div class="column">
+              <h2 class="primary_text subtitle">Development Skills</h2>
+              <ul>
+                <li class="primary_text hover_pulse">
+                  <i class="fas fa-caret-right"></i> Java
+                </li>
+                <li class="primary_text hover_pulse">
+                  <i class="fas fa-caret-right"></i> Javascript
+                </li>
+                <li class="primary_text hover_pulse">
+                  <i class="fas fa-caret-right"></i> React
+                </li>
+                <li class="primary_text hover_pulse">
+                  <i class="fas fa-caret-right"></i> React Native & Redux
+                </li>
+                <li class="primary_text hover_pulse">
+                  <i class="fas fa-caret-right"></i> Rest & GraphQL
+                </li>
+                <li class="primary_text hover_pulse">
+                  <i class="fas fa-caret-right"></i> Jira and Git
+                </li>
+              </ul>
             </div>
-            <br>
-            <br>
-    </div>
-</body>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-medium section_three" id="projects">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Projects</h1>
+          <div class="columns">
+            <div class="column card">
+              <header class="card-header">
+                <h2><strong>Scheduling Application</strong></h2>
+              </header>
+              <br />
+              <h3>
+                <strong>About:</strong> A web service that runs scheduled task
+                like the following: rest api calls on other systems, caching
+                data from other systems, running batch files, and email to
+                users.
+              </h3>
+              <br />
+              <h2>
+                <strong>Stack:</strong> Java Stack, Hibernate, Jersey, Java
+                Mail, Quartz Scheduler, JQuery, Moment, Bootstrap
+              </h2>
+            </div>
+            <div class="column card">
+              <header class="card-header">
+                <h2><strong>Mobile CMS Tool </strong></h2>
+              </header>
+              <br />
+              <h3>
+                <strong>About:</strong> Mobile version of an in house CMS tool.
+                On and offline capablilty to track information of a case, take
+                picture, track case location, and view case history.
+              </h3>
+              <br />
+              <h2>
+                <strong>Stack:</strong> React Native, Redux, Expo, React
+                Navigation, Redux Thunk, Native Base, Fuse, Lodash
+              </h2>
+            </div>
+            <div class="column card">
+              <header class="card-header">
+                <h2><strong>Inventory Scanner</strong></h2>
+              </header>
+              <br />
+              <h3>
+                <strong>About:</strong> Scanner application for inventory, used
+                barcodes to track inventory and geocode each item. On and
+                offline ability to view inventory that needed to be scanned.
+              </h3>
+              <br />
+              <h2>
+                <strong>Stack:</strong> React Native, Redux, Expo, React
+                Navigation, Redux Thunk, Native Base, Immutable
+              </h2>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column card">
+              <header class="card-header">
+                <h2><strong>Inventory Web Application</strong></h2>
+              </header>
+              <br />
+              <h3>
+                <strong>About:</strong> Backend for inventory mobile
+                applications. This handled uploads and visuals to view the
+                progress of how much inventory was scanned.
+              </h3>
+              <br />
+              <h2>
+                <strong>Stack:</strong> Java Stack, Hibernate, Jersey, Java
+                Mail, Quartz Scheduler, JQuery, Moment, Bootstrap
+              </h2>
+            </div>
+            <div class="column card">
+              <header class="card-header">
+                <h2><strong>CMS Tool</strong></h2>
+              </header>
+              <br />
+              <h3>
+                <strong>About:</strong> Implementation of a person search
+                frontend, and backend rest api. Timeline feature and history of
+                a case. As well as rest api for mobile version of application.
+              </h3>
+              <br />
+              <h2>
+                <strong>Stack:</strong> Java Stack, Hibernate, Jersey, JAX-RS,
+                JQuery, Moment, Bootstrap, Google Maps API
+              </h2>
+            </div>
+            <div class="column card">
+              <header class="card-header">
+                <h2>
+                  <strong
+                    >graphql-proxy
+                    <a
+                      target="_blank"
+                      href="https://github.com/crofoot/graphql-proxy"
+                    >
+                      (available on github)</a
+                    ></strong
+                  >
+                </h2>
+              </header>
+              <br />
+              <h3>
+                <strong>About:</strong> GraphQL layer/proxy for querying
+                existing rest apis. Allows you to configure your existing rest
+                endpoints to this application and use GraphQL to query them,
+                without modifying them.
+              </h3>
+              <br />
+              <h2>
+                <strong>Stack:</strong> Node.js, Express, Axios, Flow, GraphQL
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero footer_color">
+      <div class="hero-footer">
+        <div class="container">
+          <div class="notification footer_color">
+            <a href="https://github.com/crofoot" target="_blank"
+              ><i class="fab fa-github fa-2x my_icon"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/dominic-crofoot-200756112/"
+              target="_blank"
+              ><i class="fab fa-linkedin fa-2x my_icon"></i
+            ></a>
+            <a class="open_mail"><i class="fas fa-at fa-2x my_icon"></i></a>
+            <p class="primary_text mail center"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/utils.js"></script>
+    <script src="javascript/all.min.js"></script>
+  </body>
 </html>

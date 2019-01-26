@@ -1,0 +1,49 @@
+
+a {
+  color: #D8E1E9 !important;
+}
+
+.navbar-item:hover {
+  background-color: rgb(113, 141, 175) !important;
+}
+
+.primary {
+  background-color: #7392B7 !important;
+}
+
+.primary_text {
+  color: #D8E1E9 !important;
+}
+
+.section_one {
+  background-color: #C5D5EA !important;
+}
+
+.section_two {
+  background-color: #7C99B4 !important;
+}
+
+.section_three {
+  background-color: #BDDCFF !important;
+}
+
+.my_icon {
+  margin-right: 1%;
+}
+
+.card {
+  background-color: #9CBBD8 !important;
+  margin: 2em;
+}
+.footer_color {
+  background-color: #36494E !important;
+  align-content: center;
+}
+
+.footer_center {
+  justify-content: center;
+}
+
+.center {
+  text-align: center;
+}
